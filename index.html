@@ -26,16 +26,25 @@
             color: #333;
         }
 
-        .links img {
-            max-width: 100px;
-            margin: 10px;
+        .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .links a {
-            display: inline-block;
             margin: 10px;
             text-decoration: none;
             color: #007bff;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .links a:hover {
+            background: #007bff;
+            color: #fff;
         }
     </style>
 </head>
@@ -43,21 +52,23 @@
 <body>
     <div class="container">
         <h1>Nani's Socials</h1>
-        <a href="https://x.com/jegkalderpadig">
-            <p>twitter</p>
-        </a>
-        <a href="https://rateyourmusic.com/~fishcaker">
-            <p>rate Your Music</p>
-        </a>
-        <a href="https://www.tiktok.com/messages?lang=en">
-            <p>tiktok</p>
-        </a>
-        <a href="https://pin.it/6MZt24PzF">
-            <p>pinterest</p>
-        </a>
-        <a href="https://github.com/nanigithubber">
-            <p>github</p>
-        </a>
+        <div class="links">
+            <a href="https://x.com/jegkalderpadig">
+                <p>Twitter</p>
+            </a>
+            <a href="https://rateyourmusic.com/~fishcaker">
+                <p>Rate Your Music</p>
+            </a>
+            <a href="https://www.tiktok.com/messages?lang=en">
+                <p>Tiktok</p>
+            </a>
+            <a href="https://pin.it/6MZt24PzF">
+                <p>Pinterest</p>
+            </a>
+            <a href="https://github.com/nanigithubber">
+                <p>Github</p>
+            </a>
+        </div>
         <h2>eso me suena a música celestial</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CoJPNtrZ0DA" frameborder="0"
             allowfullscreen></iframe>
